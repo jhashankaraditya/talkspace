@@ -1,0 +1,18 @@
+.main-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+
+@media (max-width: 645px) {
+    .main-container {
+        width: 1200px; /* Adjust this value to accommodate the new size of the message container */
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .main-container > * {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
